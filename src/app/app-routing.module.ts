@@ -18,8 +18,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
+  },  {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   },
-  
 
 ];
 
